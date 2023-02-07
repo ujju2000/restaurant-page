@@ -3,30 +3,30 @@ import { renderHomePage  } from "./home";
 import {renderMenuPage} from "./menu";
 
 
-console.log("chal rha hai code");
 pageLoad;
 
 
 const tabs = document.querySelectorAll('.tab');
-console.log(tabs);
+const dataContent = document.querySelectorAll('[data-content]');
+console.log(dataContent);
+const dataTabs = document.querySelectorAll('[data-tab]');
+// console.log(dataTabs);
+// console.log(tabs);
 tabs.forEach((tab) => tab.addEventListener('click' ,(e) =>{
     // container for the tab click 
-    if(tab.id == 'menu') {
-        renderMenuPage;
-        const menu = document.querySelector('.menu');
-        menu.classList.add('active');
-    }else if(tab.id == 'home'){
-        renderHomePage;
-        const home = document.querySelector('.home');
-        home.classList.add('active');
-    }
-    else {
-        console.log("abhi likhna hai")
-    }
+    // console.log(tab.id);
+    
+    dataContent.forEach((data) =>{
+        data.classList.remove('active');
+    })
+    let target = document.querySelector(tab.getAttribute('data-tab'));
+
     // navigation 
     tabs.forEach((tab) =>{
         tab.classList.remove("red");
     })
+    // console.log(target.id);
+    target.classList.add('active');
     tab.classList.add("red");
 }))
 

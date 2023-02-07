@@ -4,9 +4,10 @@ const renderMenuPage = (() =>{
     const container = document.querySelector('#content');
 
     const menu  = document.createElement('div');
-    menu.classList.add('menu');
-    menu.innerHTML = `
-    <div class="title">MENU 
+    menu.setAttribute('data-content','');
+    menu.setAttribute('id' , 'menu');
+    
+    menu.innerHTML = `<div class="title">MENU 
     <!-- SYMBOL -->
 </div>
 <div class="cards">
@@ -91,9 +92,10 @@ const renderMenuPage = (() =>{
         </div>
     </div>
     
-</div>
-    `;
+</div>`
+
     container.appendChild(menu);
-})
+    
+})();
 
 export {renderMenuPage};

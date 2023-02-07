@@ -16,6 +16,8 @@ body {
     width : 100%;
 }
 header {
+
+    top :0;
     color : white;
     height : 5rem;
     width : 100%;
@@ -25,6 +27,7 @@ header {
     align-items: center;
     padding : 10px;
     font-size : 20px;
+    
 }
 nav {
     width : 50%;
@@ -55,7 +58,7 @@ nav li:hover::after {
     color : red;
 }
 .active {
-    display : block;
+    display : block !important;
 }
 /* main section */
 main {
@@ -121,22 +124,21 @@ footer {
 }
 
 /* menu section */
-.menu {
+#menu {
+    display : none;
     position : relative;
     height : calc(100vh - 5rem);
-    width : 100vw;
+    width : 100%;
     background: url(images/menuBackground2.jpeg);
     background-position: center ;
-    background-repeat: no-repeat;
-    /* background-origin: border-box; */
-    /* background-attachment: fixed; */
-
+    background-repeat:repeat-y;
     background-size: cover;
     opacity: 0.8;
 }
 
-.menu .title {
+#menu .title {
     position: absolute;
+    height : 10%;
     background-color: aliceblue;
     margin : auto;
     text-align: center;

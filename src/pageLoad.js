@@ -8,9 +8,9 @@ const pageLoad = (() =>{
                MOUNTAIN VIEW RESTAURANT
            </div>
            <nav>
-               <li class="tab active" id="home">Home</li>
-               <li class="tab" id="menu">Menu</li>
-               <li class="tab" id="contact">Contact Us</li>
+               <li class="tab red" data-tab = "#home">Home</li>
+               <li class="tab" data-tab = "#menu">Menu</li>
+               <li class="tab" data-tab = "#contact">Contact Us</li>
            </nav>`;
     
     container.appendChild(header);
