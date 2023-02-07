@@ -1,16 +1,16 @@
 import {pageLoad} from "./pageLoad";
 import { renderHomePage  } from "./home";
 import {renderMenuPage} from "./menu";
-
+import {renderContactPage} from "./contact";
 
 pageLoad;
-
+console.log("code chal rha hai ");
 
 const tabs = document.querySelectorAll('.tab');
 const dataContent = document.querySelectorAll('[data-content]');
 console.log(dataContent);
 const dataTabs = document.querySelectorAll('[data-tab]');
-// console.log(dataTabs);
+console.log(dataTabs);
 // console.log(tabs);
 tabs.forEach((tab) => tab.addEventListener('click' ,(e) =>{
     // container for the tab click 

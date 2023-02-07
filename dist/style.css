@@ -7,6 +7,16 @@ li {
     text-decoration-style: none;
     list-style-type: none;
 }
+input {
+    outline : none;
+    border: none;
+    border-radius: 5px;
+}
+textarea {
+    border : none;
+    outline : none;
+}
+
 body {
     background-color: blanchedalmond;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,6 +100,7 @@ main {
     position: absolute;
     top : 8%;
     left : 30%;
+
 }
 .heading {
     height : 30%;
@@ -186,4 +197,52 @@ footer {
 }
 .right-side > *{
     margin-bottom: 3px;
+}
+
+
+/* contact us section */
+
+#contact {
+    display : none;
+    position : relative;
+    height : calc(100vh - 5rem);
+    width  : 100%;
+    background-color: rgb(238, 176, 176);
+}
+
+#contact .title {
+    position : absolute;
+    text-align: center;
+    font-size : 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline blue 10px;
+    width : 15%;
+    left : 40%;
+    padding : 10px;
+    letter-spacing: .14rem;
+}
+
+.contact-container {
+    position : absolute;
+    background-color: red;
+    top : 20%;
+    left : 20%;
+    height : 70%;
+    width : 60%;
+    display: flex;
+    
+}
+
+.info {
+    height : 100%;
+    width : 40%;
+    padding: 20px;
+    display: flex;  
+    flex-direction: column;
+    background-color: yellowgreen;
+    justify-content: space-evenly;
+}
+
+.message-us form> span {
+    display : block;
 }

@@ -7,7 +7,7 @@ const renderHomePage = (() =>{
     const main = document.createElement('main');
     main.setAttribute('data-content','');
     main.setAttribute('id','home');
-    // main.classList.add('active');
+    main.classList.add('active');
     main.innerHTML = `<div class="title headline">
                 Relax and Recharge with a Meal to Remember at Mountain View Restaurant!
             </div>
