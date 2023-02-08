@@ -15,3 +15,5 @@ const pageLoad = (() =>{
     
     container.appendChild(header);
 })();
+
+export {pageLoad};

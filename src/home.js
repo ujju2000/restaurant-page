@@ -18,6 +18,7 @@ const renderHomePage = (() =>{
 
             <div class="address headline">
                 <div class="location">
+                    
                     Govind Puram, Ghaziabad
                 </div>
 

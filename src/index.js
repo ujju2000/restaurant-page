@@ -2,10 +2,12 @@ import {pageLoad} from "./pageLoad";
 import { renderHomePage  } from "./home";
 import {renderMenuPage} from "./menu";
 import {renderContactPage} from "./contact";
+import {renderFooter} from "./footer";
+
 
 pageLoad;
-console.log("code chal rha hai ");
-
+// console.log("code chal rha hai ");
+const footer = document.querySelector('#footer');
 const tabs = document.querySelectorAll('.tab');
 const dataContent = document.querySelectorAll('[data-content]');
 console.log(dataContent);
@@ -28,5 +30,10 @@ tabs.forEach((tab) => tab.addEventListener('click' ,(e) =>{
     // console.log(target.id);
     target.classList.add('active');
     tab.classList.add("red");
+    if(target.id != "menu") {
+        footer.classList.add('active');
+    }else footer.classList.remove('active');
+   
 }))
+
 
